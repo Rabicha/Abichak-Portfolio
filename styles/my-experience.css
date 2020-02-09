@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: linear-gradient(to left, #ffffffb6, #f0efefd2), url(../images/white-texture-background-portfolio.jpg);
+    background-size: cover;
+    background-position: center;
+    max-width: 1400px;
+    height: 100vh;
+}
+
+/* Style the navbar */
+
+.topnav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+    overflow: hidden;
+    background-color: #86bfca;
+}
+
+/* Style Navbar links */
+
+.topnav a {
+    float: left;
+    color: #0a0000;
+    text-align: center;
+    padding: 14px 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #003862;
+    color: white;
+}
+
+.topnav a.active {
+    background-color: #003862;
+    color: white;
+}
+
+/* style header section */
+
+h1 {
+    text-align: center;
+    font-family: Nunito;
+    font-size: 40px;
+    text-shadow: 3px 3px #86bfca;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    padding-top: 4%;
+    padding-bottom: 1%;
+}
+
+h2 {
+    font-family: Nunito;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 40px 0px 10px 35px;
+    margin: 5px;
+    letter-spacing: 2px;
+}
+
+/* Style container section */
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: baseline;
+    flex-wrap: wrap;
+    padding-top: 5px;
+    padding-left: 45px;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-company {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 15px 0px 5px 25px;
+}
+
+.text-content {
+    font-size: 20px;
+    padding: 15px 0px 2px 25px;
+}
+
+/* Styler footer section */
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    padding: 40px 0px 10px 35px;
+    text-align: right;
+}
+
+/* Apply media query on screens smaller than 720px */
+
+@media screen and (max-width: 720px) {
+    /* Style navbar */
+    .topnav {
+        flex-direction: column;
+    }
+    .topnav a {
+        padding: 4px 4px;
+    }
+    .container {
+        padding-left: 10px;
+    }
+    .container-company {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 5px 0px 5px 5px;
+    }
+    .text-content {
+        font-size: 15px;
+        padding: 5px 0px 5px 5px;
+    }
+}
